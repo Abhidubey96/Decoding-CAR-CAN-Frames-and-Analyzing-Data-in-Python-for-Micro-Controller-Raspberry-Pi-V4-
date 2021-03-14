@@ -1,0 +1,1274 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VOL AFS Outils_Diag GEP FSE ESP DSG COMELEC CMM CDS CAAR BV BSI v1
+VAL_TABLE_ Ptr_info_CDS 15 "Envoi de tous les blocs" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "Indice de process fabricant" 9 "Nom du fabricant" 8 "Indice de modification Bosch" 7 "Date de fabrication" 6 "Version hardware capteur" 5 "Identification de logiciel capte" 4 "Version de logiciel capteur" 3 "Indice modification Vhl" 2 "Numéro de pièce Bosch" 1 "Numéro de pièce client" 0 "Numéro de série" ;
+VAL_TABLE_ Type_CDS 2 "MM 3.8K" 1 "MM 3.7K" ;
+VAL_TABLE_ Defaut_CAAR 3 "Réservé" 2 "Gravité 4" 1 "Gravité 3" 0 "Aucun" ;
+VAL_TABLE_ Usure_frein 1 "Usée(s)" 0 "Etat OK" ;
+VAL_TABLE_ Dde_alrt_garde_sol 7 "Invalide" 6 "Assiette mini" 5 "Assiette maxi" 4 "Réservé" 3 "Réservé" 2 "Trop basse" 1 "Trop haut" 0 "Plage nominale" ;
+VAL_TABLE_ Diag_mini_carb 3 "Circuit Ouvert" 2 "CC à la Masse" 1 "Jauge Invalide" 0 "Jauge OK" ;
+VAL_TABLE_ Mode_serrage_FSE_BSI 1 "Manuel" 0 "Automatique" ;
+VAL_TABLE_ Defaut_etat_BV 15 "Echauff embr + Inconnu + Dem en " 14 "Echauff embr + Inconnu" 13 "Echauff embr + Dem en 3e" 12 "Echauff embr" 11 "Inconnu + Dem en 3e" 10 "Inconnu" 9 "Dem en 3e" 8 "Aucun" 7 "T Huile + Lampe + Vidange" 6 "T Huile + Lampe" 5 "T Huile + Vidange" 4 "T Huile" 3 "Lampe + Vidange" 2 "Lampe" 1 "Vidange" 0 "Aucun" ;
+VAL_TABLE_ Cont_embr_CMM 3 "HS" 2 "Réservé" 1 "Appuyé" 0 "Relaché" ;
+VAL_TABLE_ Type_regul_longi_RVV_2_2 3 "ACC" 2 "LVV" 1 "RVV" 0 "Aucune" ;
+VAL_TABLE_ Etat_mode_srrge_auto 3 "Réservé" 2 "Automatique imposé" 1 "Manuel" 0 "Automatique" ;
+VAL_TABLE_ Ouvrants 1 "Ouvert" 0 "Fermé" ;
+VAL_TABLE_ Etat_fnct_hill_assist 3 "Invalide" 2 "Réservé" 1 "Actif" 0 "Inactif" ;
+VAL_TABLE_ Chgt_rap_autorise 3 "Tous" 2 "Descendant" 1 "Montant" 0 "Aucun" ;
+VAL_TABLE_ Type_pilt_FSE 7 "Invalide" 6 "Réservé" 5 "Réservé" 4 "Réservé" 3 "Serrage autonome" 2 "Desserrage" 1 "Serrage" 0 "Inactif" ;
+VAL_TABLE_ Etat_RVV_LVV 3 "Régul inhibée" 2 "Régul active" 1 "Reprise pédale" 0 "En attente" ;
+VAL_TABLE_ Etat_P_Roue 16 "Pression normale" 8 "Non surveillée" 4 "Fortement dégonflée" 2 "Faiblement déglonfée" 1 "Roue crevée" ;
+VAL_TABLE_ Etat_DSG 7 "OK" 6 "Réservé" 5 "Réservé" 4 "Initialisation en cours" 3 "Pression inadaptée à la vitesse" 2 "Pression inadaptée à la charge " 1 "Pb système" 0 "Pb réception" ;
+VAL_TABLE_ Status_confabs 1 "Absent" 0 "Présent" ;
+VAL_TABLE_ Mode_CAAR_SRU 3 "Indéterminé" 2 "Gonflage" 1 "CAM" 0 "CAA" ;
+VAL_TABLE_ Rapport_Cible 15 "Rapport incertain" 14 "5" 13 "Réservé" 12 "6" 11 "Réservé" 10 "Réservé" 9 "Réservé" 8 "Réservé" 7 "1" 6 "6" 5 "5" 4 "4" 3 "Réservé" 2 "N" 1 "R" 0 "Réservé" ;
+VAL_TABLE_ Rap_dde_cond_affich 15 "Rapport Incertain" 14 "5" 13 "Réservé" 12 "6" 11 "Auto/Seq" 10 "Down" 9 "Up" 8 "Réservé" 7 "1" 6 "2" 5 "3" 4 "4" 3 "MAV" 2 "N" 1 "R" 0 "Réservé" ;
+VAL_TABLE_ Mode_CAAR 7 "Indéterminé" 6 "Réservé" 5 "Remplissage" 4 "Inhibé" 3 "Gonflage" 2 "CAM" 1 "CAA" 0 "Inactif" ;
+VAL_TABLE_ Frein 1 "Appuyé" 0 "Relaché" ;
+VAL_TABLE_ Etat_EPB 7 "Etat indéterminé" 6 "Réservé" 5 "Serrage maximum" 4 "Freinage dynamique" 3 "Desserrage en cours" 2 "Serrage en cours" 1 "Serré" 0 "Desserré" ;
+VAL_TABLE_ Mode_cond 3 "Interdit" 2 "Séquentiel" 1 "Automatique" 0 "Interdit" ;
+VAL_TABLE_ Pos_joy 7 "Incertain" 6 "Réservé" 5 "Réservé" 4 "Réservé" 3 "D/M" 2 "N" 1 "R" 0 "P" ;
+VAL_TABLE_ Etat_MT 15 "Invalide" 14 "Réservé" 13 "Redémarrage autonome" 12 "Réservé" 11 "Réservé" 10 "Démarrage autonome" 9 "Réservé" 8 "Réservé" 7 "En préparation" 6 "Regémarrage dégradé" 5 "Redémarrage entrainé" 4 "Arrêté" 3 "Moteur tournant" 2 "Démarrage entrainé" 1 "Coupé calé" 0 "Verrouillé" ;
+VAL_TABLE_ Pos_Levier_BV 15 "CMF HS" 14 "5" 13 "7" 12 "6" 11 "Réservé / AL4 en Manu" 10 "Intermédiaire" 9 "Intermédiaire N/D" 8 "Intermédiaire P/R ou N/R" 7 "1" 6 "2" 5 "3" 4 "4" 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_TABLE_ Rap_BV_engage_meca 15 "Incertain" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "P/N" 9 "R" 8 "Réservé" 7 "Réservé" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "Réservé" ;
+VAL_TABLE_ Rap_BV_engage 15 "Incertain" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "P/N" 9 "R" 8 "Réservé" 7 "Réservé" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "Débrayé" ;
+VAL_TABLE_ Reveil_ppal 3 "Invalide" 2 "Actif" 1 "Inactif" 0 "Invalide" ;
+VAL_TABLE_ Type_pil_cple_ESP 8 "Interdit" 7 "Interdit" 6 "MSR" 5 "ASR" 4 "Interdit" 3 "Interdit" 2 "Interdit" 1 "Interdit" 0 "Aucun" ;
+VAL_TABLE_ Prog_BV_select 3 "Neige" 2 "Manuel" 1 "Sport / Eco" 0 "Automatique" ;
+VAL_TABLE_ Etat_Embrayage 3 "Synchronisé" 2 "Embrayé" 1 "Débrayé" 0 "Glissant" ;
+VAL_TABLE_ Oui_Non 1 "Oui" 0 "Non" ;
+VAL_TABLE_ Actif_Inactif 1 "Actif" 0 "Inactif" ;
+VAL_TABLE_ Etat_cns_ASR_MSR 3 "Pas d'action possible" 2 "Dégradé" 1 "Moteur géré en boucle ouverte" 0 "Normal" ;
+VAL_TABLE_ Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ CHKSUM_TRME_DYN_EASY_MOVE_ESP : 0|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CPT_PROCESS_4B_EASY_MOVE_ESP : 0|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ETAT_FNCT_FREIN_STATION : 0|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DDE_INHI_FNCT_RVV : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Annee_ecoulee : 0|8@0+ (1,0) [0|100] "An" Vector__XXX
+ SG_ AUTOR_ARRET_HILL_STT : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cpt_process_4b_UC_Frein : 0|4@0+ (1,0) [0|15] "Aucune" Vector__XXX
+ SG_ Chksum_trme_dyn_UC_Frein : 0|4@0+ (1,0) [0|0] "Aucune" Vector__XXX
+ SG_ Cple_reel_hors_BV : 0|8@0+ (2,-100) [-100|408] "N.m" Vector__XXX
+
+BO_ 520 IS_Dyn_CMM_208: 8 CMM
+ SG_ Cple_cond_apr_trt : 63|8@0+ (2,-100) [-100|408] "N.m"  BV,ESP
+ SG_ Cple_anticipe : 55|8@0+ (2,-100) [-100|408] "N.m"  BV
+ SG_ Cple_pot_apr_trt : 47|8@0+ (2,-100) [-100|408] "N.m"  BV
+ SG_ Req_charge_mot : 39|1@0+ (1,0) [0|0] ""  BSI
+ SG_ Diag_mux_on : 38|1@0+ (1,0) [0|0] ""  BSI,BV,CAAR,COMELEC,DSG,ESP,FSE,GEP
+ SG_ Cple_MT_incertains : 36|1@0+ (1,0) [0|0] ""  BV
+ SG_ Etat_RVV_LVV : 35|2@0+ (1,0) [0|0] ""  BSI,BV
+ SG_ Contact_frein2 : 33|1@0+ (1,0) [0|0] ""  BV,COMELEC,ESP
+ SG_ Volonte_cond : 31|8@0+ (0.5,0) [0|100] "%"  BSI,BV,ESP
+ SG_ Couple_reel : 23|8@0+ (2,-100) [-100|408] "N.m"  BSI,BV,COMELEC,DSG,ESP,FSE,GEP
+ SG_ Regime_moteur : 7|16@0+ (0.125,0) [0|8191.75] "RPM"  BSI,BV,CAAR,COMELEC,DSG,ESP,FSE,GEP
+
+BO_ 281 IS_Vers_ACCEL_119: 8 CDS
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 280 IS_Vers_CAAR_118: 8 CAAR
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 279 IS_Vers_PROJ_117: 8 AFS
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 277 IS_Vers_DIRA_115: 8 GEP
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 275 IS_Vers_EPB_113: 8 FSE
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 274 IS_Vers_BSI_112: 8 BSI
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 271 IS_Vers_DSG_10F: 8 DSG
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 269 IS_Vers_ABR_10D: 8 ESP
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 266 IS_Vers_SBW_10A: 8 COMELEC
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 265 IS_Vers_BV_109: 8 BV
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 264 IS_Vers_CMM_108: 8 CMM
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 261 IS_Vers_VOL_105: 8 VOL
+ SG_ Edition_calib : 63|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Edition_soft : 55|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_soft : 47|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Version_appli : 39|8@0+ (1,0) [0|255] ""  Outils_Diag
+ SG_ Vers_date2_annee : 31|8@0+ (1,0) [0|99] ""  Outils_Diag
+ SG_ Vers_date2_mois : 23|8@0+ (1,0) [0|12] ""  Outils_Diag
+ SG_ Vers_date2_jour : 15|8@0+ (1,0) [0|31] ""  Outils_Diag
+ SG_ Version_systeme : 7|8@0+ (1,0) [0|255] ""  Outils_Diag
+
+BO_ 168 IS_CFD_BSI_CMM_0A8: 5 BSI
+ SG_ Clf_BSI_pds_pls_fble : 39|8@0+ (1,0) [0|0] ""  CMM
+ SG_ Clf_BSI_pds_fble : 31|8@0+ (1,0) [0|0] ""  CMM
+ SG_ Clf_BSI_pds_frt : 23|8@0+ (1,0) [0|0] ""  CMM
+ SG_ Clf_BSI_pds_pls_frt : 15|8@0+ (1,0) [0|0] ""  CMM
+ SG_ Autoris_dvrrllge : 7|8@0+ (1,0) [0|0] ""  CMM
+
+BO_ 146 IS_Inte_Electron_BSI_092: 1 BSI
+ SG_ Diag_Integra_Elec_ : 7|1@0+ (1,0) [0|0] ""  AFS,BV,CAAR,CMM,COMELEC,DSG,ESP,FSE,GEP
+ SG_ Mode_Diag : 6|1@0+ (1,0) [0|0] ""  AFS,BV,CAAR,CMM,COMELEC,DSG,ESP,FSE,GEP
+ SG_ Effac_Defaut_Diag : 0|1@0+ (1,0) [0|0] ""  AFS,BV,CAAR,CMM,COMELEC,DSG,ESP,FSE,GEP
+
+BO_ 114 IS_EAC_CMM_BSI_072: 5 CMM
+ SG_ Reserve_82 : 39|8@0+ (1,0) [0|0] ""  BSI
+ SG_ Reserve_81 : 31|8@0+ (1,0) [0|0] ""  BSI
+ SG_ Reserve_8 : 23|8@0+ (1,0) [0|0] ""  BSI
+ SG_ Etat_calculatr : 15|8@0+ (1,0) [0|0] ""  BSI
+ SG_ Envoi_etat_calculatr : 7|8@0+ (1,0) [0|0] ""  BSI
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 ETAT_FNCT_FREIN_STATION "000: Frein de statio desserré
+001: Frein de statio serré
+010: Frein de statio en cours de serrage
+011: Frein de statio en cours de desserrage
+100: Freinage dyn en cours
+101: Frein de statio serré à l'effort max
+110: Réservé
+111: Etat indéterminé";
+CM_ SG_ 3221225472 DDE_INHI_FNCT_RVV "0: Pas de demande d'inhibition RVV
+1: Demande d'inhibition RVV";
+CM_ SG_ 3221225472 AUTOR_ARRET_HILL_STT "0: Hill Assist pas prêt pour arrêt
+1: Hill Assist prêt pour arrêt";
+CM_ SG_ 3221225472 Cpt_process_4b_UC_Frein "Compteur de process 4 bits UC Frein voir fiche paramŠtre P606_a";
+CM_ SG_ 3221225472 Chksum_trme_dyn_UC_Frein "Cheksum trame dynamique v‚hicule ABR voir fiche paramŠtre 607_a.";
+CM_ SG_ 3221225472 Cple_reel_hors_BV "C'est le couple th‚orique sans tenir compte de la r‚duction demand‚e par la BV.
+Nota : ce couple se rapproche (au rapport de r‚duction prŠs) du couple aux roues y compris pendant la phase \"changement";
+CM_ SG_ 1458 ETAT_INFO_EOBD_BSI "0XXXXXXX: Pas de défaut du réseau VAN CONF ou CMB
+1XXXXXXX: Défaillance du réseau VAN CONF ou CMB
+X0XXXXXX: Pas de défaut du réseau VAN CARROSSERIE 1 ou du
+BSM
+X1XXXXXX: Défaillance du réseau VAN CARROSSERIE 1 ou du
+BSM
+";
+CM_ SG_ 1458 TEMP_AIR_EXT "Température air
+extérieur";
+CM_ SG_ 1404 ETAT_DMTR "Etat soutien actif
+Etat nominal
+Etat dégradé inhib longue
+Etat dégradé inhib courte
+Etat dégradé immobilisation 2
+Etat dégradé immobilisation 3
+Valeur non utilisée
+Invalide";
+CM_ SG_ 1394 AUT_WARM_UP_GEI "Autorisation de la stratégie WARMUP par la GEI
+0: Pas Autorisé
+1: Autorisé";
+CM_ SG_ 1394 BAT_U_PRED_REDEM "Tension batterie 12V
+prédite au redémarrage";
+CM_ SG_ 1394 BAT_DEFAUT_U_BIN "Défaut du capteur de tension aux bornes de la batterie 12V
+0: pas de défaut
+1: défaut";
+CM_ SG_ 1394 BAT_DEFAUT_T_BIN "Défaut dans le calcul de la température interne de la batterie 12V
+0: pas de défaut
+1: défaut";
+CM_ SG_ 1394 BAT_DEFAUT_I_BIN "Défaut du capteur de courant de la batterie 12V
+0: pas de défaut
+1: défaut";
+CM_ SG_ 1394 BESOINS_GEI_CDB_3 "00000001: Besoin QRDB GEI 6
+00000010: Besoin QRDB GEI 7
+00000100 : Besoin QRDB GEI 8
+00001000: Besoin QRDB GEI 9
+00010000 : Besoin QRDB GEI 10
+00100000: Besoin QRDB GEI 11
+01000000: Besoin QRDB GEI 12
+10000000: Besoin QRDB GEI 13";
+CM_ SG_ 1394 BESOINS_GEI_CDB_2 "00000001 : Besoin GEI City Park
+00000010 : Besoin GEI Besoin Usine Terminale
+00000100 : Besoin GEI Besoin sécurité LAS
+00001000 : Besoin GEI 1
+00010000 : Besoin GEI 2
+00100000 : Besoin GEI 3
+01000000 : Besoin GEI 4
+10000000 : Besoin GEI 5";
+CM_ SG_ 1394 BESOINS_GEI_CDB_1 "00000001: Besoin GEI Feux de croisement seuls
+00000010: Besoin GEI Feux_route
+00000100 : Besoin GEI Pulseur air habitacle
+00001000: Besoin GEI FSE
+00010000 : Besoin GEI Essuyage pare-brise
+00100000: Besoin GEI Lavage pare-brise
+";
+CM_ SG_ 1375 DATA_ACQ_JDD_BSI_2 "Data Acquitement JDD
+BSI";
+CM_ SG_ 1330 BAT_U_MIN_TRAITE "Tension batterie
+minimale";
+CM_ SG_ 1330 BAT_RINT_NORM_TRAITE "Résistance interne de la
+batterie normalisée";
+CM_ SG_ 1330 BAT_I_MAX_TRAITE "Courant maximal de
+décharge";
+CM_ SG_ 1266 VALEUR_SOC_ETENDUE "Valeur de l'état de charge batterie à quantification élevée
+Pour STT ou FEEGO
+Archi 2004 and 2010";
+CM_ SG_ 1266 STATUS_SOC "Validité de l'information SOC
+00: Estimation SOC nominale
+01: Estimation SOC dégradée
+10: Défaut (invalide)
+11: Estimation SOC non pertinente";
+CM_ SG_ 1266 POS_MEAP_ACT "Position du MEAP
+00: MEAP bloqué ouvert
+01: MEAP ouvert
+10: MEAP fermé
+11: MEAP défaillant";
+CM_ SG_ 1266 BAT_UBATT_CO_ESTIM "Tension en circuit ouvert
+de la batterie";
+CM_ SG_ 1266 BAT_RES_INT_ESTIM "Résistance interne de la
+batterie";
+CM_ SG_ 1266 TENSION_MIN_PROD_EE "Tension minimum à
+garantir par la
+production EE";
+CM_ SG_ 1266 TENSION_MAX_PROD_EE "Tension maximum à
+garantir par la
+production EE";
+CM_ SG_ 1266 GRAV_ER_TENSION_MIN "Gravité de l'ER lié à la tension minimum
+00: Gravité 2
+01: Gravité 3
+10: Gravité 4
+11: Réservé";
+CM_ SG_ 1266 GRAV_ER_TENSION_MAX "Gravité de l'ER lié à la tension maximum
+00: Gravité 2
+01: Gravité 3
+10: Gravité 4
+11: Réservé";
+CM_ SG_ 1266 VAR_TENSION_PROD_EE "Variation max à
+appliquer par la
+production EE";
+CM_ SG_ 1266 DMD_MEAP_CLIM "Besoin d'ouverture MEAP pour clim
+0: Pas de demande
+1: Demande";
+CM_ SG_ 1080 INDICE_PERFO "Indicateur de
+performance moteur";
+CM_ SG_ 1080 REGIME_CPLE_MAX "BVA (Pour Euro 6)
+Archi 2004 and 2010";
+CM_ SG_ 1080 CPLE_MINI "BVA (Pour Euro 6)
+Archi 2004 and 2010";
+CM_ SG_ 968 DDE_OUV_CDT "00: Pas de demande
+01: Demande d'ouverture CDT pour stop
+10: Réservé
+11: Réservé";
+CM_ SG_ 968 TYPE_REDEM "0: Redémarrage classique
+1: Redémarrage doux";
+CM_ SG_ 968 ARRET_MOT_EN_COURS "0: Pas d'arrêt moteur en cours
+1: Arrêt moteur en cours";
+CM_ SG_ 968 ETAT_POINT_MORT "00: Réservé
+01: Hors point mort
+10: Point mort
+11: Invalide";
+CM_ SG_ 809 Pos_levier_PN "01 : Neutre ou Park
+10 : Hors Neutre ou Park";
+CM_ SG_ 744 Rapport_BMP_min "0001 :1ere
+0010 :2eme
+0011 :3eme
+0100 :4eme
+0101 :5eme
+0110 :6eme";
+CM_ SG_ 744 Rapport_BMP_max "0001 :1ere
+0010 :2eme
+0011 :3eme
+0100 :4eme
+0101 :5eme
+0110 :6eme";
+CM_ BO_ 904 "Message construit par NODBOX et présent sur 206 
+Vehicules avant 2006";
+CM_ SG_ 904 VITESSE_VEHICULE_BV_NF "Vitesse non filtrée";
+CM_ SG_ 904 Distance_Roues "C'est un compteur free running qui s'incr‚mente … chaque top distance.
+Lorsqu'au cours du fonctionnement, la valeur atteint FFFFh, elle repasse … 0. Il n'y a pas de valeur invalide. Si on ne sait pas";
+CM_ SG_ 904 Accel_Longi_Roues "Acc‚l‚ration longitudinale positive lorsque le v‚hicule acc‚lŠre et n‚gative lorsque le v‚hicule freine.";
+CM_ BO_ 2034 "Le m‚canisme d'‚mission utilis‚ est la p‚riodicit‚; les donn‚es d‚finies ci-dessus sont ‚mises alternativement chacune leur tour.
+L'organisation des donn‚es dans la trame et leur codage est conforme";
+CM_ SG_ 2034 Etat_info_EOBD_BSI "Cr‚er pour la fonction EOBD dans la BSI pour release des v‚hicules D9, Z8, N7 sans ADDGO
+
+A l'init, 'Etat des informations EOBD BSI 1 = 00000000'";
+CM_ SG_ 2034 Etat_additivation "Le bit 7 donne une indication sur l'aptitude du systŠme … pouvoir additiver; cette aptitude est fonction de l'‚tat du systŠme d'additivation donn‚s par les autres bits de ce paramŠtre. 
+Il s'agit d'u";
+CM_ SG_ 2034 Kilometrage_3 "A l'init,0 puis recopie de la derniŠre valeur m‚moris‚e";
+CM_ SG_ 2034 Code_Diagnostic1 "Cf  ISO/WD 15765  Diagnosis systems";
+CM_ SG_ 2034 Code_Diagnostic "Cf  ISO/WD 15765  Diagnosis systems";
+CM_ SG_ 2034 PCI "Cf  ISO/WD 15765  Diagnosis systems - Part 2 Network/Transport USDT Protocol Version 0.5";
+CM_ BO_ 2025 "(Cf .STE 96.308.322.9A ind J)  \"Cahier des charges services diagnostiques EOBD\" ,pr‚conisation PSA.";
+CM_ BO_ 2024 "(Cf .STE 96.308.322.9A ind J)  \"Cahier des charges services diagnostiques EOBD\" ,pr‚conisation PSA.";
+CM_ BO_ 2018 "Le m‚canisme d'‚mission utilis‚ est la p‚riodicit‚; les donn‚es d‚finies ci-dessus sont ‚mises alternativement chacune leur tour.
+L'organisation des donn‚es dans la trame et leur codage est conforme";
+CM_ SG_ 2018 Etat_info_EOBD_BSI "Cr‚er pour la fonction EOBD dans la BSI pour release des v‚hicules D9, Z8, N7 sans ADDGO
+
+A l'init, 'Etat des informations EOBD BSI 1 = 00000000'";
+CM_ SG_ 2018 Etat_additivation "Le bit 7 donne une indication sur l'aptitude du systŠme … pouvoir additiver; cette aptitude est fonction de l'‚tat du systŠme d'additivation donn‚s par les autres bits de ce paramŠtre. 
+Il s'agit d'u";
+CM_ SG_ 2018 Kilometrage_2 "A l'init,0 puis recopie de la derniŠre valeur m‚moris‚e";
+CM_ SG_ 2018 Code_Diagnostic1 "Cf  ISO/WD 15765  Diagnosis systems";
+CM_ SG_ 2018 Code_Diagnostic "Cf  ISO/WD 15765  Diagnosis systems";
+CM_ SG_ 2018 PCI "Cf  ISO/WD 15765  Diagnosis systems - Part 2 Network/Transport USDT Protocol Version 0.5";
+CM_ BO_ 2017 "(Cf .STE 96.308.322.9A ind J)  \"Cahier des charges services diagnostiques EOBD\" ,pr‚conisation PSA.";
+CM_ BO_ 2016 "(Cf .STE 96.308.322.9A ind J)  \"Cahier des charges services diagnostiques EOBD\" ,pr‚conisation PSA.";
+CM_ BO_ 2015 "(Cf .STE 96.308.322.9A ind J)  \"Cahier des charges services diagnostiques EOBD\" ,pr‚conisation PSA.";
+CM_ SG_ 1984 CCW1_Vol "Le bit entre parenthŠses dans la description d‚taill‚e de l'‚num‚ration correspond au signal CCW2_Vol.";
+CM_ SG_ 1944 Status_reveil_partiel "A l'initialisation 'Flags status des r‚veils partiels = 0000h' ainsi qu'en r‚veil principal/ principal d‚grad‚ et phase transitoire.";
+CM_ SG_ 1944 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1943 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1941 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1939 Status_reveil_partiel "A l'initialisation 'Flags status des r‚veils partiels = 0000h' ainsi qu'en r‚veil principal/ principal d‚grad‚ et phase transitoire.";
+CM_ SG_ 1939 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1938 Status_reveil_partiel "A l'initialisation 'Flags status des r‚veils partiels = 0000h' ainsi qu'en r‚veil principal/ principal d‚grad‚ et phase transitoire.";
+CM_ SG_ 1938 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1935 Status_reveil_partiel "A l'initialisation 'Flags status des r‚veils partiels = 0000h' ainsi qu'en r‚veil principal/ principal d‚grad‚ et phase transitoire.";
+CM_ SG_ 1935 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1933 Status_reveil_partiel "A l'initialisation 'Flags status des r‚veils partiels = 0000h' ainsi qu'en r‚veil principal/ principal d‚grad‚ et phase transitoire.";
+CM_ SG_ 1933 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1930 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ SG_ 1929 Status_reveil_partiel "A l'initialisation 'Flags status des r‚veils partiels = 0000h' ainsi qu'en r‚veil principal/ principal d‚grad‚ et phase transitoire.";
+CM_ SG_ 1929 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ BO_ 1928 "pour plus de d‚tails concernant les paramŠtres et leur g‚n‚ration, se reporter aux fiches correspondantes et au CdC \"Couches de communication g‚n‚riques\" n° 96.311.921.9A";
+CM_ SG_ 1928 Status_reveil_partiel "A l'initialisation 'Flags status des r‚veils partiels = 0000h' ainsi qu'en r‚veil principal/ principal d‚grad‚ et phase transitoire.";
+CM_ SG_ 1928 Status_ConfAbsent "Les bits de ce mot de status sont num‚rot‚s de 0 … 31  0 correspond au LSB (octet le plus … droite) et 31 au MSB (octet le plus … gauche).";
+CM_ BO_ 1912 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1912 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1911 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1911 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1909 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1909 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1907 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1907 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1906 "Voir sp‚cification STE 96.438.371.9A ind OR  \"Journal des Defauts centralise BSI\", pr‚conisation PSA.";
+CM_ SG_ 1906 Data_Acq_JDD_BSI "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1903 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1903 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1901 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1901 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1897 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1897 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1896 "voir sp‚cification  STE 96.438.371.9A ind OR   \"Journal des d‚fauts centralis‚ BSI\" ,pr‚conisation PSA.";
+CM_ SG_ 1896 Data_Emis_JDD "La d‚finition des paramŠtres et du protocole est dans la STE 96 438 371 9A ind OR \"Journal des d‚fauts centralis‚ BSI.";
+CM_ BO_ 1721 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1720 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1719 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1717 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1715 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1714 "Cf .STE 96.435.787.99  \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1711 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1709 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1706 "Cf .STE 96.435.787.99 ind OR \"Int‚gration diagnostic et t‚l‚chargement Via CAN\" ,pr‚conisation PSA.";
+CM_ BO_ 1705 "Cf .STE 96.435.787.99 ind OR \"Int‚gration diagnostic et t‚l‚chargement Via CAN\" ,pr‚conisation PSA.";
+CM_ BO_ 1704 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1689 "Cf .STE 96.435.787.99  \" Int‚gration diagnostic et t‚l‚chargement Via CAN \" ,pr‚conisation PSA.";
+CM_ BO_ 1688 "Cf .STE 96.435.787.99  \" Int‚gration diagnostic et t‚l‚chargement Via CAN \" ,pr‚conisation PSA.";
+CM_ BO_ 1687 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1685 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN\" ,pr‚conisation PSA.";
+CM_ BO_ 1683 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN\" ,pr‚conisation PSA.";
+CM_ BO_ 1682 "Cf .STE 96.435.787.99 ind OR \" Int‚gration diagnostic et t‚l‚chargement Via CAN \" ,pr‚conisation PSA.";
+CM_ BO_ 1679 "Cf .STE 96.435.787.99  ind OR \"Int‚gration diagnostic et t‚l‚chargement Via CAN \" ,pr‚conisation PSA.";
+CM_ BO_ 1677 "Cf .STE 96.435.787.99  ind OR \"Int‚gration diagnostic et t‚l‚chargement Via CAN\" ,pr‚conisation PSA.";
+CM_ BO_ 1674 "Cf .STE 96.435.787.99  \" Int‚gration diagnostic et t‚l‚chargement Via CAN \" ,pr‚conisation PSA.";
+CM_ BO_ 1673 "Cf .STE 96.435.787.99  \" Int‚gration diagnostic et t‚l‚chargement Via CAN \" ,pr‚conisation PSA.";
+CM_ BO_ 1672 "Cf .STE 96.435.787.99  \"Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 1544 "Le m‚canisme d'‚mission utilis‚ est la p‚riodicit‚; les donn‚es d‚finies ci-dessus sont ‚mises alternativement chacune leur tour ( il faut 300ms pour avoir 3 data en alternance).
+(Cf .STE 96.308.322.";
+CM_ SG_ 1544 Valeur_Charge_calcule "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Pression_Abs_Tub_Admi "Pression absolue";
+CM_ SG_ 1544 Mano_Carburant "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Etat_syst_alim_2 "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Pression_gasoil "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Etat_syst_alim_1 "Voir spec 96.308.322.9A pour le codage des paramŠtres";
+CM_ SG_ 1544 Correc_lente_Carbur_Rang_2 "Voir spec 96.308.322.9A pour le codage des paramŠtres";
+CM_ SG_ 1544 Air_Flow_Rate "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Correc_Rap_Carbur_Rang_2 "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Correc_Lente_Carbur_Rang_1 "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Vitesse_veh "Voir spec 96.308.322.9A pour la d‚finition.";
+CM_ SG_ 1544 Data_A_EOBD_CMM1 "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Correc_Rap_Carbur_Rang_1 "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Data_B_EOBD_CMM "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Regime_moteur_2 "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Temp_Liquide_Refroi "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Data_A_EOBD_CMM "Voir spec 96.308.322.9A pour le codage des paramŠtres.";
+CM_ SG_ 1544 Code_LID "LID = 0x01 ou  0x02 ou 0x03";
+CM_ SG_ 1426 Courant_batterie "x0.001 - 1 : si calibration _IB ATT : 0b00
+x0.01 - 200 : si calibration _IB ATT : 0b01
+x0.1 - 1500 : si calibration _IB ATT : 0b10";
+CM_ SG_ 1416 Etat_STT "01 : STT activé
+10 : STT désactivé
+11 : STT en défaut";
+CM_ SG_ 1416 Niv_huile_mot "Les valeurs FBh … FDh valeurs interdites";
+CM_ SG_ 1401 Caract_0_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Caract_1_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Caract_3_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Caract_2_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Caract_4_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Caract_5_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Caract_7_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Caract_6_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Type_capt_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Ptr_info_tricpt_RB "D‚finition BOSCH";
+CM_ SG_ 1401 Offset_block_RB "D‚finition BOSCH";
+CM_ BO_ 1389 "Application actuel de B5 avec MCP Hill assistance et B58 Hill Holder";
+CM_ SG_ 1389 Ptr_info_tricpt_RB "D‚finition BOSCH";
+CM_ SG_ 1389 Activ_info_tricptr_RB "Provoque l'‚mission de la trame 2F9h
+D‚finition BOSCH";
+CM_ SG_ 1389 CRC_tricptr_RB "D‚finition R.BOSCH";
+CM_ BO_ 1362 "Kilométrage trouvé par NODBOX sur C4 II. Remplacé par l'année écoulée dans les autres véhicules";
+CM_ SG_ 1362 Kilometrage "Trouvé par NODBOX
+Disponible selon les véhicules";
+CM_ SG_ 1299 Chksum_trme_dat_EPB "Cheksum trame donn‚es FSE voir fiche paramŠtre 602_a.";
+CM_ SG_ 1299 Effort_appliq_cble "Valeurs interdites 191h … FFFFh";
+CM_ SG_ 1299 Alrt_voy_rouge_FSE "Demande de clignotement du voyant rouge";
+CM_ SG_ 1294 Cpt_trame_BSI "Ce compteur s'incr‚mente … chaque envoi d'une trame";
+CM_ SG_ 1294 Dem_Ral_Hab "Les fonctions habitacle envoient cette requˆte au CMM.
+Si la demande est en dessous d'un seuil min fix‚ par le CMM, elle ne sera pas prise en compte.";
+CM_ SG_ 1294 Puiss_meca_clim "Cette puissance m‚canique est ‚valu‚e par le systŠme qui pilote le compresseur de climatisation.";
+CM_ SG_ 1294 Niv_delestage_SEV "Se r‚f‚rer … la STE 96 384 382 99 Ind OR.";
+CM_ SG_ 1294 Forcage_Encl_bougies "p144 selon v‚hicule";
+CM_ SG_ 1294 Cns_cont_GMV_clim "Ce signal repr‚sente le pourcentage de la vitesse GMV par rapport … la vitesse max.
+00h signifie qu'il n'y a pas de consigne envoy‚e.
+.";
+CM_ SG_ 1294 Chksum_cons_RVV_LVV "R‚sultat de parit‚ des bits de poids fort de la consigne RVV/LVV et de la parit‚ des bits de poids faible de la consigne RVV/LVV";
+CM_ SG_ 1293 Cpt_Top_ARD "mise … jour de ce compteur avec Cpt_Top_ARG dans le mˆme cycle de calcul.";
+CM_ SG_ 1293 Cpt_Top_ARG "mise … jour de ce compteur avec Cpt_Top_ARG dans le mˆme cycle de calcul.";
+CM_ SG_ 1161 Rap_dde_cond_affich "En BVMP, le rapport demand‚ par le conducteur est le rapport avant acceptation par le soft.";
+CM_ SG_ 1161 Prog_BV_select "Le code '10' signifie mode manuel, toutes les autres positions veulent dire mode 'Automatique' en cours";
+CM_ SG_ 1161 Rap_BV_engage "EN BVA, lors d'un changement de rapport  (signal Changement de rapport en cours … 1), le signal Rapport de boŒte de vitesse engag‚ indique le rapport de BV vis‚ (par exemple, si l'on passe de 3Šme";
+CM_ SG_ 1161 Pos_levier_BV_affich "En BVA, l'information \"Interm‚diaire\" sert … pr‚venir le conducteur du risque de d‚marrer soit en marche arriŠre soit en marche avant du fait de la position du levier.   
+
+1111 : en BVA, le CMF emet";
+CM_ SG_ 1160 Temp_air_adm "Complété par NODBOX";
+CM_ SG_ 1160 Forcage_Pression_BVA "En 4HP20 uniquement";
+CM_ SG_ 1160 Risque_colmatage_FAP "Pour application FAP";
+CM_ SG_ 1160 Alerte_niv_min_additif "P108 selon v‚hicule";
+CM_ SG_ 1160 Cns_regul_ralenti "Consigne de r‚gulation calcul‚e au moins 1 fois par seconde par le calculateur CMM.
+Dynamique r‚elle : 600-1500 RPM.
+C'est le r‚gime statique vis‚ par le contr“le moteur .
+Cette valeur doit ˆtre re";
+CM_ SG_ 1160 Conso_carburant "Il n'y a pas de valeur invalide. Si on ne sait pas calculer la consommation, elle reste fig‚e … sa derniŠre valeur.
+La valeur est donn‚e modulo 20400 mm3.";
+CM_ SG_ 1128 ETAT_PROD "Etat de la production
+000: OFF
+001: ON
+010: Réservé
+011: Réservé
+100: Réservé
+101: Réservé
+110: Indisponible
+111: Invalide";
+CM_ SG_ 1128 TRANSIT_TURBO_CRS "Transition Turbo en
+Cours";
+CM_ SG_ 1128 DEFAUT_CMM "00: Pas de défaut
+01: Défaut G3
+10: Défaut G4
+11: Indisponible";
+CM_ SG_ 1128 ETAT_AUTORISATION_DEM "00: En attente
+01: Autorisation
+10: Interdiction
+11: Réservé";
+CM_ SG_ 1128 ETAT_CDT_VHL "00: Chaine de traction ouverte
+01: Chaine de traction fermée
+10: Chaine de traction invalide
+11: Réservé";
+CM_ SG_ 1128 NIV_PROD_GEN "Niveau de la production du générateur
+000: Bas
+001: Modéré
+010: Haut
+011: Pleine charge
+100: Réservé
+101: Réservé
+110: Indisponible
+111: Invalide";
+CM_ SG_ 1128 CNS_U_REG_ALTERN "Consigne de tension envoyée au régulateur de l'alternateur";
+CM_ SG_ 1128 DEFAUT_PROD_2 "Défaut de production du générateur";
+CM_ SG_ 1128 AUTORISATION_RAMPAGE "0: Interdiction de rampage
+1: autorisation de rampage";
+CM_ SG_ 1128 AUTOR_CMM_DAE "Autorisation CMM de réhabilitation DAE
+00: pas d'autorisation
+01: autorisation
+10: Valeur non utilisée
+11: Valeur non utilisée";
+CM_ SG_ 1128 ETAT_ACTIV_WARMUP "Retour d'état sur l'activation de la stratégie WARMUP
+0: pas d'activation
+1: activation";
+CM_ SG_ 1128 ETAT_FEE "Etat de la fourniture en énergie électrique 12V émis par le sous système GMP
+0000 : stockeur / stockeur
+0001 : stockeur / stockeur + MEL sans maintien
+0010 : stockeur / stockeur avec MEL avec maintien complet
+
+
+
+
+";
+CM_ SG_ 1128 DELEST_SECU_MOT_NIV1 "0: Pas de demande de délestage
+1: Demande de délestage";
+CM_ SG_ 1128 DMD_REL_R3 "Demande de pilotage Relais R3
+0: Pas de demande de pilotage
+1: Demande de pilotage";
+CM_ SG_ 1128 DMD_REL_R2 "Demande de pilotage Relais R2
+0: Pas de demande de pilotage
+1: Demande de pilotage";
+CM_ SG_ 1128 DMD_REL_R1 "Demande de pilotage Relais R1
+0: Pas de demande de pilotage
+1: Demande de pilotage";
+CM_ SG_ 1128 DMD_PONTAGE_BVA "0: Pas de demande
+1: Demande";
+CM_ SG_ 1128 DMD_LEST_PROD_EE "00: demande de lestage maximum
+01: demande de lestage moyen
+10: pas de demande de lestage
+11: Réservé";
+CM_ SG_ 1101 Regime_moyen_roues_Av "Pour une d‚vellop‚e de 2 m
+Exemple : ((192 km/h *1000)/(2*60)) = 1600 tr/mn";
+CM_ SG_ 1074 Cpt_vol_carb_ajoute "Valeur interdite 111";
+CM_ SG_ 1074 Reveil_principal "Voir STE 96 433 527 9B id OR  \"Modes de r‚veil et Gestion des phases de vie des SystŠmes  Electroniques\"
+Signal cod‚ sur 2 bits pour s‚curisation transmission CAN";
+CM_ SG_ 1042 Contact_frein1_HS "Non régression 271_03_1";
+CM_ SG_ 1042 Contact_frein1 "Non régression 271_03_1";
+CM_ SG_ 1042 Etat_ouvrants "A l'init, 'Etat des ouvrants = 00000' tout ferm‚";
+CM_ SG_ 1042 Req_Chauf_Hab "Pour tous les codages sup‚rieurs … \"00\",les moteurs EP6DTx piloteront la CTP1 (leur seule CTP).";
+CM_ SG_ 1042 Dde_mes_huile_mot "Pour moteur EW10A, EW7A, EW12E4, TU1A, DW12B";
+CM_ BO_ 1037 "Les 4 compteurs de top roues doivent etre calcul‚s dans le mˆme cycle de calcul";
+CM_ SG_ 1037 Cpt_Top_14b_ARD "mise … jour de ce compteur avec Cpt_Top_14b_ARG dans le mˆme cycle de calcul.";
+CM_ SG_ 1037 Cpt_Top_14b_ARG "mise … jour de ce compteur avec Cpt_Top_14b_ARD dans le mˆme cycle de calcul.";
+CM_ SG_ 1037 Cpt_Top_14b_AVD "mise … jour de ce compteur avec Cpt_Top_14_AVG dans le mˆme cycle de calcul.";
+CM_ SG_ 1037 Cpt_Top_14b_AVG "mise … jour de ce compteur avec Cpt_Top_14b_AVD dans le mˆme cycle de calcul.";
+CM_ SG_ 1034 Pos_action_SBW "Pour correspondance avec SRU";
+CM_ SG_ 1034 Pos_joy "* Si levier 5 positions stables";
+CM_ SG_ 973 Vitesse_lacet "Non régression 271_03_1";
+CM_ SG_ 973 Accel_lat "Positif pour un virage … gauche";
+CM_ SG_ 969 Rap_cible "En BVMP, le rapport cibl‚ est le rapport valid‚ (accept‚ par le soft).";
+CM_ SG_ 941 Chksum_trme_dyn_Easy_Move_ESP "Cheksum trame dynamique Easy Move ESP voir fiche paramŠtre 603_a.";
+CM_ SG_ 941 Cns_vitesse_rot_mot_FSE "Valeurs interdites de C9h … FFh";
+CM_ SG_ 941 Defaut_fnct_Easy_move "Voir fiche paramŠtre P599";
+CM_ SG_ 941 Etat_fnct_frein_station "Cette information retranscrit l'‚tat de serrage hydraulique et m‚canique du systŠme.";
+CM_ SG_ 920 Chksum_trme_dyn_CAAR "Cheksum trame dynamique CAAR voir fiche paramŠtre 602_a.";
+CM_ SG_ 920 Degr_deb "Valeur positive en situation d'attaque et n‚gatif en d‚tente";
+CM_ SG_ 920 Haut_deb_AR "Valeur positive en situation d'attaque et n‚gatif en d‚tente";
+CM_ BO_ 909 "Vehicules après 2006";
+CM_ SG_ 909 Accel_Longi_Roues "Acc‚l‚ration longitudinale positive lorsque le v‚hicule acc‚lŠre et n‚gative lorsque le v‚hicule freine.";
+CM_ SG_ 909 Distance_Roues "C'est un compteur free running qui s'incr‚mente … chaque top distance.
+Lorsqu'au cours du fonctionnement, la valeur atteint FFFFh, elle repasse … 0. Il n'y a pas de valeur invalide. Si on ne sait pas";
+CM_ BO_ 845 "(A) Se reporter … la STE \"Surveillance des consignes ASR et MSR de l'ESP dans les contr“les moteur\" ref : 96 354 334 99 (codage de P157, compteur de processus 4 bits, d‚pendant des FNR)
+(B) Cette tra";
+CM_ SG_ 845 Req_dem_neige "Non géré en B58";
+CM_ SG_ 845 Regul_MSR "Non géré en B58";
+CM_ SG_ 845 Regul_BASR "Non géré en B58";
+CM_ SG_ 845 Regul_ASR "Non géré en B58";
+CM_ SG_ 845 Regul_AFU "Non géré en B58";
+CM_ SG_ 845 Cns_cple_MSR "Couple vers lequel le moteur doit tendre en final.
+Lorsque cette consigne est envoy‚e, le contr“le de pilotage de couple (signal \"Type pilotage de couple CDS\") doit alors valoir \"consigne d'augmentat";
+CM_ SG_ 845 Cns_cple_dyn_ASR "Consigne envoy‚e par les systŠmes ASR.
+Couple vers lequel le moteur doit tendre le plus rapidement possible, dŠs le prochain PMH.
+Lorsque cette consigne est envoy‚e, le contr“le de pilotage de coupl";
+CM_ SG_ 845 Cns_cple_stat_ASR "Couple vers lequel le moteur doit tendre en final.
+Lorsque cette consigne est envoy‚e, le contr“le de pilotage de couple (signal \"Type pilotage de couple CDS\") doit alors valoir \"consigne de reductio";
+CM_ BO_ 841 "Cette trame est commune aux systŠmes BVMP et AM6 (l'AM6 est une BVA qui fait aussi de la r‚gulation de r‚gime)";
+CM_ SG_ 841 Cns_regul_regim "Rq : N = FFh valeur interdite
+N = FEh il n'y a pas de r‚gulation de r‚gime";
+CM_ SG_ 841 Cple_max_adm_BV "Cette information correspond … une demande de la boŒte de limitation du couple dans certaines conditions (engagement de rapports, marche arriŠre, ...).
+FFh : valeur interdite pour consigne de couple";
+CM_ SG_ 841 Rap_BV_engage_AM6 "EN BVA, lors d'un changement de rapport  (signal Changement de rapport en cours … 1), le signal Rapport de boŒte de vitesse engag‚ indique le rapport de BV vis‚ (par exemple, si l'on passe de 3ieme";
+CM_ SG_ 841 Rap_cible_MCP "En BVMP, le rapport cibl‚ est le rapport valid‚ (accept‚ par le soft).";
+CM_ SG_ 841 Pos_levier_BV_AM6 "L'information \"Interm‚diaire\" sert … pr‚venir le conducteur du risque de d‚marrer soit en marche arriŠre soit en marche avant du fait de la position du levier.    D‚finir qui utilise les 3 infos ....";
+CM_ SG_ 841 Etat_convert_BVA "Cette information doit ˆtre regroup‚e avec le rapport de boŒte et l'information changement de rapport en cours.";
+CM_ BO_ 840 "(A) moteur essence avec papillon motoris‚ : voir STE 96 320 352 9A (MOT / CME)
+(B) moteur essence sans papillon motoris‚ :  voir STE 96 323 037 99 (MOT / CME)
+(C) moteur diesel :";
+CM_ SG_ 840 Rapport_engage_BMP "0000 : Débrayé ou point mort
+0001 : rapport 1
+0010 : rapport 2
+0011 : rapport 3
+0100 : rapport 4
+0101 : rapport 5
+0110 : rapport 6
+1001 : rapport MAR";
+CM_ SG_ 840 Etat_MT "0000 : verrouillé
+0001 : coupé calé
+0010 : demarrage entrainé
+0011 : moteur tournant
+0100 : arreté
+0101 : redémarrage entrainé
+0110 : redémarrage dégradé
+0111 : en préparation
+1010 : démarrage autonome
+1101 : redémarrage autonome";
+CM_ SG_ 840 Couple_resistant "Pertes propres du moteur + couples pr‚lev‚s par les accessoires (connus du moteur : climat., direction assist‚e) : Cf +Cacc";
+CM_ SG_ 840 Cple_cond_avt_trt "Couple demand‚ par le conducteur avant traitement par le CMM.";
+CM_ SG_ 773 Chksum_vol "chksum = higher nibble (alpha) XOR lower nibble (alpha) XOR (Cpt_angle_vol)
+         avec  alpha = lower byte (Angle_volant) XOR higher byte (Angle_volant) XOR (vitesse_rot_vol) XOR (octet 4 de la tr";
+CM_ SG_ 773 Trim_vol "Le bit Trim_vol doit ˆtre … 1. S'il est … 0, ne pas les utiliser les donn‚es \"Angle\" et \"Vitesse\".";
+CM_ SG_ 773 Vitesse_rot_vol "Si la vitesse de rotation est sup‚rieure aux limites, la valeur envoy‚e reste fig‚e … cette limite.";
+CM_ SG_ 773 Angle_volant "> 0 dans le sens trigonom‚trique
+Min et max sont des valeurs fonctionnelles";
+CM_ BO_ 761 "Pour tricapteur BOSCH";
+CM_ SG_ 761 Vitesse_lacet_12b_RB "La plage de variation de l'information est limit‚e … +/- 100  °/s
+D‚finition R.BOSCH";
+CM_ SG_ 761 Accel_lat_12b_RB "La plage de variation de l'information est limit‚e … +/- 17,66 m/s2
+D‚finition R.BOSCH";
+CM_ SG_ 761 Cpt_msg_RB "D‚finition BOSCH";
+CM_ SG_ 761 Accel_longi_12b_RB "La plage de variation de l'information est limit‚e … +/- 17,66 m/s2
+D‚finition BOSCH";
+CM_ SG_ 761 Etat_accel_longi_brute_RB "D‚finition BOSCH";
+CM_ SG_ 761 Etat_accel_lat_brute_RB "D‚finition R.BOSCH";
+CM_ SG_ 761 Etat_vitesse_lacet_brute_RB "D‚finition BOSCH";
+CM_ SG_ 761 Soustension_surtension_RB "D‚finition BOSCH";
+CM_ SG_ 761 Err_interne_RB "D‚finition R.BOSCH";
+CM_ SG_ 761 CRC_tricptr_RB "D‚finition R.BOSCH";
+CM_ BO_ 552 "(A) moteur essence avec papillon motoris‚ : voir STE 96 320 352  (MOT / CME)
+(B) moteur essence sans papillon motoris‚ :  voir STE 96 323 037 (MOT / CME)
+(C) moteur diesel :";
+CM_ SG_ 552 Chksum_trme_dyn5_CMM "Cheksum trame dynamique CAAR voir fiche paramŠtre 602_a.";
+CM_ SG_ 552 Efcmnt_pdle_accel "Cas d'un capteur fournissant 2 informations : l'information envoy‚e est l'information principale.
+Si un d‚faut est d‚tect‚ sur cette information, on envoie alors l'information secondaire.
+Si un d‚fa";
+CM_ BO_ 520 "(A) moteur essence avec papillon motoris‚ : voir STE 96 320 352  (MOT / CME)
+(B) moteur essence sans papillon motoris‚ :  voir STE 96 323 037 (MOT / CME)
+(C) moteur diesel :";
+CM_ SG_ 520 Req_charge_mot "selon v‚hicule";
+CM_ SG_ 520 Etat_RVV_LVV "STE RVV2 : 96.433.720.99
+STE LVV    : 96.461.220.99
+
+Pour la fonction RVV1 ,STE RVV1 : 96.367.293.99 le codage est le suivant
+00 (Initial) = RVV Inactive / RVV no active
+01            = Reprise p";
+CM_ SG_ 520 Volonte_cond "Cas d'un capteur fournissant 2 informations : l'information envoy‚e est l'information principale.
+Si un d‚faut est d‚tect‚ sur cette information, on envoie alors l'information secondaire.
+Si un d‚fa";
+CM_ SG_ 520 Regime_moteur "Calcul … chaque PMH
+Pr‚cision sur un tour : mieux que 3 t/min en dessous de 3000 t/min
+Valeur en dessous de 300 t/min : 0
+32 RPM par bit MSB";
+CM_ SG_ 281 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 281 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 281 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 281 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 281 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 281 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 280 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 280 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 280 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 280 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 280 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 280 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 279 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 279 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 279 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 279 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 279 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 279 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 277 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 277 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 277 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 277 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 277 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 277 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 275 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 275 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 275 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 275 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 275 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 275 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 274 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 274 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 274 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 274 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 274 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 274 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 271 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 271 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 271 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 271 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 271 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 271 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 269 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 269 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 269 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 269 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 269 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 269 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 266 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 266 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 266 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 266 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 266 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 266 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 265 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 265 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 265 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 265 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 265 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 265 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 264 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 264 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 264 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 264 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 264 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 264 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 261 Edition_calib "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids faible du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les";
+CM_ SG_ 261 Edition_soft "- Pour les calculateurs t‚l‚chargeables, l'‚dition logiciel correspond … l'octet de poids fort du paramŠtre \"Edition du logiciel\". Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+- Pour les c";
+CM_ SG_ 261 Version_soft "Pour les calculateurs non t‚l‚chargeables, la version du logiciel correspond … l'octet de poids faible du paramŠtre \"Indice d'‚volution soft\".
+Voir \"Keyword Protocol 2000-3F\" ref. 96.253.521.99";
+CM_ SG_ 261 Vers_date2_annee "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.
+Ex : 2001 = 01h";
+CM_ SG_ 261 Vers_date2_mois "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ SG_ 261 Vers_date2_jour "Pour les calculateurs t‚l‚chargeables en flash eprom, la date … prendre en compte est la date de t‚l‚chargement (DATE-2).
+Voir \"Application flash EPROM 2000\" ref. 96.285.582.99.";
+CM_ BO_ 168 "Pour ADC2:
+Description fonctionnelle dans  STE 96.293.986.9A (pour CMM) .
+D‚finition d‚taill‚e CAN dans STE 96.301.978.9A (pour CMM)
+Cette mˆme trame (sous le meme ID) est aussi utilis‚e pour diffu";
+CM_ BO_ 146 "Voir sp‚cification STE 96.435.787.99 ind OR  \"Int‚gration diagnostic et t‚l‚chargement Via CAN \",pr‚conisation PSA.";
+CM_ BO_ 114 "Pour ADC2 :
+Description fonctionnelle dans  STE 96.293.986.9A (pour CMM) .
+D‚finition d‚taill‚e CAN dans STE 96.301.978.9A (pour CMM).
+Cette mˆme trame (sous le meme ID) est aussi utilis‚e pour dif";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "BusType" "CAN";
+BA_ "NmStationAddress" BU_ VOL 5;
+BA_ "NmStationAddress" BU_ AFS 23;
+BA_ "NmStationAddress" BU_ Outils_Diag 0;
+BA_ "NmStationAddress" BU_ GEP 21;
+BA_ "NmStationAddress" BU_ FSE 19;
+BA_ "NmStationAddress" BU_ ESP 13;
+BA_ "NmStationAddress" BU_ DSG 15;
+BA_ "NmStationAddress" BU_ COMELEC 10;
+BA_ "NmStationAddress" BU_ CMM 8;
+BA_ "NmStationAddress" BU_ CDS 25;
+BA_ "NmStationAddress" BU_ CAAR 24;
+BA_ "NmStationAddress" BU_ BV 9;
+BA_ "NmStationAddress" BU_ BSI 18;
+BA_ "GenMsgCycleTime" BO_ 2034 1000;
+BA_ "GenMsgSendType" BO_ 2034 0;
+BA_ "GenMsgCycleTime" BO_ 2018 1000;
+BA_ "GenMsgSendType" BO_ 2018 0;
+BA_ "GenMsgSendType" BO_ 1944 0;
+BA_ "GenMsgCycleTime" BO_ 1944 1000;
+BA_ "GenMsgSendType" BO_ 1943 0;
+BA_ "GenMsgCycleTime" BO_ 1943 1000;
+BA_ "GenMsgSendType" BO_ 1941 0;
+BA_ "GenMsgCycleTime" BO_ 1941 1000;
+BA_ "GenMsgSendType" BO_ 1939 0;
+BA_ "GenMsgCycleTime" BO_ 1939 1000;
+BA_ "GenMsgSendType" BO_ 1938 0;
+BA_ "GenMsgCycleTime" BO_ 1938 1000;
+BA_ "GenMsgSendType" BO_ 1935 0;
+BA_ "GenMsgCycleTime" BO_ 1935 1000;
+BA_ "GenMsgSendType" BO_ 1933 0;
+BA_ "GenMsgCycleTime" BO_ 1933 1000;
+BA_ "GenMsgSendType" BO_ 1930 0;
+BA_ "GenMsgCycleTime" BO_ 1930 1000;
+BA_ "GenMsgSendType" BO_ 1929 0;
+BA_ "GenMsgCycleTime" BO_ 1929 1000;
+BA_ "GenMsgSendType" BO_ 1928 0;
+BA_ "GenMsgCycleTime" BO_ 1928 1000;
+BA_ "GenMsgSendType" BO_ 1554 0;
+BA_ "GenMsgCycleTime" BO_ 1554 100;
+BA_ "GenMsgSendType" BO_ 1544 0;
+BA_ "GenMsgCycleTime" BO_ 1544 100;
+BA_ "GenMsgSendType" BO_ 1426 0;
+BA_ "GenMsgCycleTime" BO_ 1426 100;
+BA_ "GenMsgSendType" BO_ 1416 0;
+BA_ "GenMsgCycleTime" BO_ 1416 100;
+BA_ "GenMsgSendType" BO_ 1362 0;
+BA_ "GenMsgCycleTime" BO_ 1362 1000;
+BA_ "GenMsgSendType" BO_ 1303 0;
+BA_ "GenMsgCycleTime" BO_ 1303 100;
+BA_ "GenMsgCycleTime" BO_ 1299 100;
+BA_ "GenMsgSendType" BO_ 1299 0;
+BA_ "GenMsgSendType" BO_ 1295 0;
+BA_ "GenMsgCycleTime" BO_ 1295 300;
+BA_ "GenMsgSendType" BO_ 1294 0;
+BA_ "GenMsgCycleTime" BO_ 1294 100;
+BA_ "GenMsgSendType" BO_ 1293 0;
+BA_ "GenMsgCycleTime" BO_ 1293 100;
+BA_ "GenMsgSendType" BO_ 1173 0;
+BA_ "GenMsgCycleTime" BO_ 1173 100;
+BA_ "GenMsgSendType" BO_ 1161 0;
+BA_ "GenMsgCycleTime" BO_ 1161 60;
+BA_ "GenMsgSendType" BO_ 1160 0;
+BA_ "GenMsgCycleTime" BO_ 1160 100;
+BA_ "GenMsgSendType" BO_ 1128 0;
+BA_ "GenMsgCycleTime" BO_ 1128 40;
+BA_ "GenMsgSendType" BO_ 1112 0;
+BA_ "GenMsgCycleTime" BO_ 1112 50;
+BA_ "GenMsgSendType" BO_ 1101 0;
+BA_ "GenMsgCycleTime" BO_ 1101 40;
+BA_ "GenMsgCycleTime" BO_ 1074 50;
+BA_ "GenMsgSendType" BO_ 1074 0;
+BA_ "GenMsgCycleTime" BO_ 1042 50;
+BA_ "GenMsgSendType" BO_ 1042 0;
+BA_ "GenMsgCycleTime" BO_ 1037 20;
+BA_ "GenMsgSendType" BO_ 1037 0;
+BA_ "GenMsgCycleTime" BO_ 1034 20;
+BA_ "GenMsgSendType" BO_ 1034 0;
+BA_ "GenMsgCycleTime" BO_ 973 10;
+BA_ "GenMsgSendType" BO_ 973 0;
+BA_ "GenMsgCycleTime" BO_ 969 10;
+BA_ "GenMsgSendType" BO_ 969 0;
+BA_ "GenMsgCycleTime" BO_ 941 20;
+BA_ "GenMsgSendType" BO_ 941 0;
+BA_ "GenMsgCycleTime" BO_ 920 20;
+BA_ "GenMsgSendType" BO_ 920 0;
+BA_ "GenMsgCycleTime" BO_ 909 40;
+BA_ "GenMsgSendType" BO_ 909 0;
+BA_ "GenMsgCycleTime" BO_ 845 20;
+BA_ "GenMsgSendType" BO_ 845 0;
+BA_ "GenMsgCycleTime" BO_ 841 10;
+BA_ "GenMsgSendType" BO_ 841 0;
+BA_ "GenMsgCycleTime" BO_ 840 20;
+BA_ "GenMsgSendType" BO_ 840 0;
+BA_ "GenMsgCycleTime" BO_ 773 10;
+BA_ "GenMsgSendType" BO_ 773 0;
+BA_ "GenMsgCycleTime" BO_ 761 10;
+BA_ "GenMsgSendType" BO_ 761 0;
+BA_ "GenMsgCycleTime" BO_ 552 10;
+BA_ "GenMsgSendType" BO_ 552 0;
+BA_ "GenMsgCycleTime" BO_ 520 10;
+BA_ "GenMsgSendType" BO_ 520 0;
+BA_ "GenSigInactiveValue" SG_ 552 Info_cple_easy_move 0;
+VAL_ 1944 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1944 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1943 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1943 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1941 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1939 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1938 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1938 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1935 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1935 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1933 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1933 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1930 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1930 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1929 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1929 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1928 Status_confabs_PROJ 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_CAV 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_CDS 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_DSG 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_CMM 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_CAAR 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_BV 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_BSI 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_SBW 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_GEP 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_FSE 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Status_confabs_ESP 1 "Absent" 0 "Présent" ;
+VAL_ 1928 Etat_electr_UCE 8 "Réservé" 7 "Non Géré" 6 "Init/Endormissement" 5 "Principal Dégradé" 4 "Principal" 3 "Transitoire" 2 "Partiel Interne" 1 "Partiel" 0 "Veille" ;
+VAL_ 1426 Mode_serrage_FSE 1 "Manuel" 0 "Automatique" ;
+VAL_ 1401 Type_capt_RB 2 "MM 3.8K" 1 "MM 3.7K" ;
+VAL_ 1401 Ptr_info_tricpt_RB 15 "Envoi de tous les blocs" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "Indice de process fabricant" 9 "Nom du fabricant" 8 "Indice de modification Bosch" 7 "Date de fabrication" 6 "Version hardware capteur" 5 "Identification de logiciel capte" 4 "Version de logiciel capteur" 3 "Indice modification Vhl" 2 "Numéro de pièce Bosch" 1 "Numéro de pièce client" 0 "Numéro de série" ;
+VAL_ 1389 Ptr_info_tricpt_RB 15 "Envoi de tous les blocs" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "Indice de process fabricant" 9 "Nom du fabricant" 8 "Indice de modification Bosch" 7 "Date de fabrication" 6 "Version hardware capteur" 5 "Identification de logiciel capte" 4 "Version de logiciel capteur" 3 "Indice modification Vhl" 2 "Numéro de pièce Bosch" 1 "Numéro de pièce client" 0 "Numéro de série" ;
+VAL_ 1389 Activ_info_tricptr_RB 1 "Actif" 0 "Inactif" ;
+VAL_ 1299 Etat_EPB 7 "Etat indéterminé" 6 "Réservé" 5 "Serrage maximum" 4 "Freinage dynamique" 3 "Desserrage en cours" 2 "Serrage en cours" 1 "Serré" 0 "Desserré" ;
+VAL_ 1299 Reveil_fnct_Easy_Move 1 "Actif" 0 "Inactif" ;
+VAL_ 1299 Reveil_dde_etat_haut_CAAR_FSE 1 "Actif" 0 "Inactif" ;
+VAL_ 1299 Reveil_Affichage_FSE 1 "Actif" 0 "Inactif" ;
+VAL_ 1295 Reveil_plip_detecte 1 "Actif" 0 "Inactif" ;
+VAL_ 1295 Etat_roue_SC 16 "Pression normale" 8 "Non surveillée" 4 "Fortement dégonflée" 2 "Faiblement déglonfée" 1 "Roue crevée" ;
+VAL_ 1295 Etat_dsg 7 "OK" 6 "Réservé" 5 "Réservé" 4 "Initialisation en cours" 3 "Pression inadaptée à la vitesse" 2 "Pression inadaptée à la charge " 1 "Pb système" 0 "Pb réception" ;
+VAL_ 1295 Etat_roue_ARD 16 "Pression normale" 8 "Non surveillée" 4 "Fortement dégonflée" 2 "Faiblement déglonfée" 1 "Roue crevée" ;
+VAL_ 1295 Etat_roue_ARG 16 "Pression normale" 8 "Non surveillée" 4 "Fortement dégonflée" 2 "Faiblement déglonfée" 1 "Roue crevée" ;
+VAL_ 1295 Etat_roue_AVD 16 "Pression normale" 8 "Non surveillée" 4 "Fortement dégonflée" 2 "Faiblement déglonfée" 1 "Roue crevée" ;
+VAL_ 1295 Etat_roue_AVG 16 "Pression normale" 8 "Non surveillée" 4 "Fortement dégonflée" 2 "Faiblement déglonfée" 1 "Roue crevée" ;
+VAL_ 1294 Dde_activation_RVV_ACC 1 "Actif" 0 "Inactif" ;
+VAL_ 1294 Type_regul_longi 3 "ACC" 2 "LVV" 1 "RVV" 0 "Aucune" ;
+VAL_ 1294 Dde_activation_LVV 1 "Actif" 0 "Inactif" ;
+VAL_ 1293 Usure_plaq_frein 1 "Usée(s)" 0 "Etat OK" ;
+VAL_ 1293 Defaut_ABR 1 "Actif" 0 "Inactif" ;
+VAL_ 1293 Alrt_patinage 1 "Actif" 0 "Inactif" ;
+VAL_ 1293 Regul_ABR 1 "Actif" 0 "Inactif" ;
+VAL_ 1224 Info_crash 1 "Actif" 0 "Inactif" ;
+VAL_ 1161 Rap_dde_cond_affich 15 "Rapport Incertain" 14 "5" 13 "Réservé" 12 "6" 11 "Auto/Seq" 10 "Down" 9 "Up" 8 "Réservé" 7 "1" 6 "2" 5 "3" 4 "4" 3 "MAV" 2 "N" 1 "R" 0 "Réservé" ;
+VAL_ 1161 Dde_appui_frein 1 "Actif" 0 "Inactif" ;
+VAL_ 1161 Interdiction_dema 1 "Actif" 0 "Inactif" ;
+VAL_ 1161 Defaut_etat_BV 15 "Echauff embr + Inconnu + Dem en " 14 "Echauff embr + Inconnu" 13 "Echauff embr + Dem en 3e" 12 "Echauff embr" 11 "Inconnu + Dem en 3e" 10 "Inconnu" 9 "Dem en 3e" 8 "Aucun" 7 "T Huile + Lampe + Vidange" 6 "T Huile + Lampe" 5 "T Huile + Vidange" 4 "T Huile" 3 "Lampe + Vidange" 2 "Lampe" 1 "Vidange" 0 "Aucun" ;
+VAL_ 1161 Prog_BV_select 3 "Neige" 2 "Manuel" 1 "Sport / Eco" 0 "Automatique" ;
+VAL_ 1161 Chgt_rap_refuse 1 "Actif" 0 "Inactif" ;
+VAL_ 1161 Rap_BV_engage 15 "Incertain" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "P/N" 9 "R" 8 "Réservé" 7 "Réservé" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "Débrayé" ;
+VAL_ 1161 Rap_BV_engage_meca 15 "Incertain" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "P/N" 9 "R" 8 "Réservé" 7 "Réservé" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "Réservé" ;
+VAL_ 1161 Pos_levier_BV_affich 15 "CMF HS" 14 "5" 13 "7" 12 "6" 11 "Réservé / AL4 en Manu" 10 "Intermédiaire" 9 "Intermédiaire N/D" 8 "Intermédiaire P/R ou N/R" 7 "1" 6 "2" 5 "3" 4 "4" 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_ 1160 Defaut_RVV_LVV 1 "Actif" 0 "Inactif" ;
+VAL_ 1128 Etat_demarreur 1 "Actif" 0 "Inactif" ;
+VAL_ 1128 Contact_frein2_inc 1 "Oui" 0 "Non" ;
+VAL_ 1128 Protection_demarreur 1 "Actif" 0 "Inactif" ;
+VAL_ 1128 Etat_DAMP_CMM 1 "Actif" 0 "Inactif" ;
+VAL_ 1112 Mode_fonc_CAAR_SRU 3 "Indéterminé" 2 "Gonflage" 1 "CAM" 0 "CAA" ;
+VAL_ 1112 Etat_Comp_CAAR_SRU 1 "Actif" 0 "Inactif" ;
+VAL_ 1112 Dde_alrt_garde_sol 7 "Invalide" 6 "Assiette mini" 5 "Assiette maxi" 4 "Réservé" 3 "Réservé" 2 "Trop basse" 1 "Trop haut" 0 "Plage nominale" ;
+VAL_ 1112 Defaut_CAAR 3 "Réservé" 2 "Gravité 4" 1 "Gravité 3" 0 "Aucun" ;
+VAL_ 1112 Correc_haut_en_cours 1 "Actif" 0 "Inactif" ;
+VAL_ 1112 Reveil_fnct_manuel_CAAR 1 "Actif" 0 "Inactif" ;
+VAL_ 1112 Assiette_roul_non_atteint 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Dde_arret_demarreur 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Reveil_plip_DSG 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Dde_dem_maintenu_1 3 "Invalide" 2 "Actif" 1 "Inactif" 0 "Invalide" ;
+VAL_ 1074 Dde_dem_impulsionnel 3 "Invalide" 2 "Actif" 1 "Inactif" 0 "Invalide" ;
+VAL_ 1074 Reveil_prepa_GEP 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Reveil_vvh_UCFrein 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Reveil_prepa_dem_mot 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Reveil_mes_huile_mot 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Reveil_dde_etat_FSE 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Reveil_correct_haut_pneu 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Dde_prepa_moteur 1 "Oui" 0 "Non" ;
+VAL_ 1074 Dde_dem_maintenu_2 3 "Invalide" 2 "Actif" 1 "Inactif" 0 "Invalide" ;
+VAL_ 1074 Reveil_principal 3 "Invalide" 2 "Actif" 1 "Inactif" 0 "Invalide" ;
+VAL_ 1074 Reveil_dde_etat_BV 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Reveil_anticipation_ADC 1 "Actif" 0 "Inactif" ;
+VAL_ 1074 Dde_coup_MT 3 "Invalide" 2 "Actif" 1 "Inactif" 0 "Invalide" ;
+VAL_ 1042 Push_BV_Sport 1 "Actif" 0 "Inactif" ;
+VAL_ 1042 Push_BV_Neige 1 "Actif" 0 "Inactif" ;
+VAL_ 1042 Ouvrant_Coffre 1 "Ouvert" 0 "Fermé" ;
+VAL_ 1042 Ouvrant_AVG 1 "Ouvert" 0 "Fermé" ;
+VAL_ 1042 Ouvrant_AVD 1 "Ouvert" 0 "Fermé" ;
+VAL_ 1042 Ouvrant_ARG 1 "Ouvert" 0 "Fermé" ;
+VAL_ 1042 Ouvrant_ARD 1 "Ouvert" 0 "Fermé" ;
+VAL_ 1042 Contact_frein_prk 1 "Appuyé" 0 "Relaché" ;
+VAL_ 1042 Contact_frein1_HS 1 "Oui" 0 "Non" ;
+VAL_ 1042 Contact_frein1 1 "Appuyé" 0 "Relaché" ;
+VAL_ 1042 Diag_mini_carb 3 "Circuit Ouvert" 2 "CC à la Masse" 1 "Jauge Invalide" 0 "Jauge OK" ;
+VAL_ 1042 Mini_carb 1 "Actif" 0 "Inactif" ;
+VAL_ 1034 Pos_action_SBW 7 "Incertain" 6 "Réservé" 5 "Réservé" 4 "Réservé" 3 "D/M" 2 "N" 1 "R" 0 "P" ;
+VAL_ 1034 Mode_cond 3 "Interdit" 2 "Séquentiel" 1 "Automatique" 0 "Interdit" ;
+VAL_ 1034 Pos_joy 7 "Incertain" 6 "Réservé" 5 "Réservé" 4 "Réservé" 3 "D/M" 2 "N" 1 "R" 0 "P" ;
+VAL_ 973 Contact_frein3 1 "Appuyé" 0 "Relaché" ;
+VAL_ 973 Contact_frein3_HS 1 "Oui" 0 "Non" ;
+VAL_ 969 Rap_cible 15 "Rapport incertain" 14 "5" 13 "Réservé" 12 "6" 11 "Réservé" 10 "Réservé" 9 "Réservé" 8 "Réservé" 7 "1" 6 "6" 5 "5" 4 "4" 3 "Réservé" 2 "N" 1 "R" 0 "Réservé" ;
+VAL_ 941 Defaut_fnct_Easy_move 1 "Actif" 0 "Inactif" ;
+VAL_ 941 Etat_mode_srrge_auto 3 "Réservé" 2 "Automatique imposé" 1 "Manuel" 0 "Automatique" ;
+VAL_ 941 Etat_fnct_frein_station 7 "Etat indéterminé" 6 "Réservé" 5 "Serrage minimum" 4 "Freinage dynamique" 3 "Desserrage en cours" 2 "Serrage en cours" 1 "Serré" 0 "Desserré" ;
+VAL_ 941 Type_pilt_FSE 7 "Invalide" 6 "Réservé" 5 "Réservé" 4 "Réservé" 3 "Serrage autonome" 2 "Desserrage" 1 "Serrage" 0 "Inactif" ;
+VAL_ 920 Etat_Comp_CAAR_PRS 1 "Actif" 0 "Inactif" ;
+VAL_ 920 Mode_fonc_CAAR_PRS 7 "Indéterminé" 6 "Réservé" 5 "Remplissage" 4 "Inhibé" 3 "Gonflage" 2 "CAM" 1 "CAA" 0 "Inactif" ;
+VAL_ 845 Req_dem_neige 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Regul_MSR 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Regul_BASR 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Regul_ASR 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Regul_AFU 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Regul_ESP_seul 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Etat_fnct_hill_assist 3 "Invalide" 2 "Réservé" 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Chgt_rap_autorise 3 "Tous" 2 "Descendant" 1 "Montant" 0 "Aucun" ;
+VAL_ 845 Regul_ESP 1 "Actif" 0 "Inactif" ;
+VAL_ 845 Type_pil_cple_ESP 8 "Interdit" 7 "Interdit" 6 "MSR" 5 "ASR" 4 "Interdit" 3 "Interdit" 2 "Interdit" 1 "Interdit" 0 "Aucun" ;
+VAL_ 841 Rap_BV_engage_AM6 15 "Incertain" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "P/N" 9 "R" 8 "Réservé" 7 "Réservé" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "P" ;
+VAL_ 841 Rap_cible_MCP 15 "Rapport incertain" 14 "5" 13 "Réservé" 12 "6" 11 "Réservé" 10 "Réservé" 9 "Réservé" 8 "Réservé" 7 "1" 6 "6" 5 "5" 4 "4" 3 "Réservé" 2 "N" 1 "R" 0 "Réservé" ;
+VAL_ 841 Rap_BV_engage_meca_MCP 15 "Incertain" 14 "Réservé" 13 "Réservé" 12 "Réservé" 11 "Réservé" 10 "P/N" 9 "R" 8 "Réservé" 7 "Réservé" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "Réservé" ;
+VAL_ 841 Pos_levier_BV_AM6 15 "CMF HS" 14 "5" 13 "7" 12 "6" 11 "Réservé / AL4 en Manu" 10 "Intermédiaire" 9 "Intermédiaire N/D" 8 "Intermédiaire P/R ou N/R" 7 "1" 6 "2" 5 "3" 4 "4" 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_ 841 Regul_regim_demand 1 "Oui" 0 "Non" ;
+VAL_ 841 Inh_chgt_cpr_clim 1 "Oui" 0 "Non" ;
+VAL_ 841 Chgt_rap_en_cours 1 "Oui" 0 "Non" ;
+VAL_ 841 Etat_trainee_BV 3 "Synchronisé" 2 "Embrayé" 1 "Débrayé" 0 "Glissant" ;
+VAL_ 840 Etat_MT 15 "Invalide" 14 "Réservé" 13 "Redémarrage autonome" 12 "Réservé" 11 "Réservé" 10 "Démarrage autonome" 9 "Réservé" 8 "Réservé" 7 "En préparation" 6 "Regémarrage dégradé" 5 "Redémarrage entrainé" 4 "Arrêté" 3 "Moteur tournant" 2 "Démarrage entrainé" 1 "Coupé calé" 0 "Verrouillé" ;
+VAL_ 840 Cont_embr_CMM 3 "HS" 2 "Réservé" 1 "Appuyé" 0 "Relaché" ;
+VAL_ 840 Etat_cns_ASR_MSR 3 "Pas d'action possible" 2 "Dégradé" 1 "Moteur géré en boucle ouverte" 0 "Normal" ;
+VAL_ 840 Acq_ASR_MSR 1 "Actif" 0 "Inactif" ;
+VAL_ 552 Cple_EM_incertain 1 "Actif" 0 "Inactif" ;
+VAL_ 520 Etat_RVV_LVV 3 "Régul inhibée" 2 "Régul active" 1 "Reprise pédale" 0 "En attente" ;
+VAL_ 520 Contact_frein2 1 "Appuyé" 0 "Relaché" ;
+VAL_ 146 Diag_Integra_Elec_ 1 "Actif" 0 "Inactif" ;
+VAL_ 146 Mode_Diag 1 "Actif" 0 "Inactif" ;
+VAL_ 146 Effac_Defaut_Diag 1 "Actif" 0 "Inactif" ;
+
